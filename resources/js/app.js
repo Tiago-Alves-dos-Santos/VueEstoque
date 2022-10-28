@@ -4,10 +4,15 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-require('./bootstrap');
+// require('./bootstrap');
 
 window.Vue = require('vue').default;
 import vuetify from './vuetify';
+import { createInertiaApp } from '@inertiajs/inertia-vue'
+import { InertiaProgress } from '@inertiajs/progress'
+
+InertiaProgress.init()
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -19,7 +24,7 @@ import vuetify from './vuetify';
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -27,7 +32,14 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-const app = new Vue({
-    el: '#app',
-    vuetify
-});
+ createInertiaApp({
+    resolve: name => require(`./Pages/${name}`),
+    setup({ el, App, props, plugin }) {
+      Vue.use(plugin)
+  
+      new Vue({
+        vuetify,
+        render: h => h(App, props),
+      }).$mount(el)
+    },
+  })

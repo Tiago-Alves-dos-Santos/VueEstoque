@@ -2101,39 +2101,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _vuetify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vuetify */ "./resources/js/vuetify.js");
 /* harmony import */ var _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @inertiajs/inertia-vue */ "./node_modules/@inertiajs/inertia-vue/dist/index.js");
 /* harmony import */ var _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @inertiajs/progress */ "./node_modules/@inertiajs/progress/dist/index.js");
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 // require('./bootstrap');
 
 window.Vue = (__webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js")["default"]);
 
 
 
+//spa
+
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__.InertiaProgress.init();
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
 // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
+Vue.component('Link', _inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__.Link);
 (0,_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_1__.createInertiaApp)({
   resolve: function resolve(name) {
     return __webpack_require__("./resources/js/Pages sync recursive ^\\.\\/.*$")("./".concat(name));
@@ -9241,6 +9220,43 @@ module.exports = function (list, options) {
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Data.vue":
+/*!*************************************!*\
+  !*** ./resources/js/Pages/Data.vue ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Data.vue?vue&type=template&id=1bfcfc5a& */ "./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Data.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Home.vue":
 /*!*************************************!*\
   !*** ./resources/js/Pages/Home.vue ***!
@@ -9278,6 +9294,23 @@ component.options.__file = "resources/js/Pages/Home.vue"
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a&":
+/*!********************************************************************!*\
+  !*** ./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a& ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Data_vue_vue_type_template_id_1bfcfc5a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Data.vue?vue&type=template&id=1bfcfc5a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a&");
+
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488&":
 /*!********************************************************************!*\
   !*** ./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488& ***!
@@ -9295,9 +9328,9 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a&":
 /*!***********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Data.vue?vue&type=template&id=1bfcfc5a& ***!
   \***********************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -9328,26 +9361,44 @@ var render = function () {
             ]
           ),
           _vm._v(" "),
-          _c(
-            "v-alert",
-            { attrs: { border: "right", color: "blue-grey", dark: "" } },
-            [
-              _vm._v(
-                "\n        I'm an alert with a right border and blue-grey color\n        "
-              ),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "v-alert",
-            { attrs: { border: "bottom", color: "pink darken-1", dark: "" } },
-            [
-              _vm._v(
-                "\n        I'm an alert with a bottom border and pink color\n        "
-              ),
-            ]
-          ),
-          _vm._v(" "),
+          _c("Link", { attrs: { href: "/" } }, [_vm._v("Home")]),
+        ],
+        1
+      ),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Home.vue?vue&type=template&id=6a63e488& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function () {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "v-app",
+    { attrs: { app: "" } },
+    [
+      _c(
+        "v-container",
+        [
           _c(
             "v-alert",
             { attrs: { border: "left", color: "indigo", dark: "" } },
@@ -9357,6 +9408,8 @@ var render = function () {
               ),
             ]
           ),
+          _vm._v(" "),
+          _c("Link", { attrs: { href: "/data" } }, [_vm._v("Data")]),
         ],
         1
       ),
@@ -67696,6 +67749,8 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_vue__;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var map = {
+	"./Data": "./resources/js/Pages/Data.vue",
+	"./Data.vue": "./resources/js/Pages/Data.vue",
 	"./Home": "./resources/js/Pages/Home.vue",
 	"./Home.vue": "./resources/js/Pages/Home.vue"
 };
